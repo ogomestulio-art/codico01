@@ -7,7 +7,8 @@ media = (nota1 + nota2) / 2
 print("a media do aluno é:", media)
 
 # verificar a condição de aprovação
-if media < 6:
-        print("o aluno reprovado")
-else:
+if media >= 6:
         print("o aluno foi aprovado")
+else:
+        print("o aluno foi reprovado")
+
