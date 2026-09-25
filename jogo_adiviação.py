@@ -27,7 +27,7 @@ for rodada in range(1,4):
             else:
                 pontos_rodada_usuario = 10
 
-            print(f"🎉 Acertou! Você ganhou {pontos_rodada} pontos nesta rodada.")
+            print(f"🎉 Acertou! Você ganhou {pontos_rodada_usuario} pontos nesta rodada.")
             break
         elif palpite > numero_secreto:
             print("Seu palpite foi MAIOR que o número secreto.")
@@ -68,8 +68,15 @@ while tentativas_computador < 5:
 if pontos_rodada_computador ==0:
     print("computador não acertou nessa rodada")
 
-    "pontuação_computador" += pontos_rodada_computador
+    potuacao_total += pontos_rodadas
 
     # resultado final 
     print("\n=== resultado final===")
-    print(f"pontuação u")
+    print(f"pontuação total: {potuacao_total}")
+
+    if potuacao_total > 200:
+        print("classificacao: exelente")
+    elif 100 <= potuacao_total <=200:
+        print("classificacao: bom")
+    else:
+        print("classificacao: tente novamente")
