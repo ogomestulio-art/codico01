@@ -11,7 +11,7 @@ media = sum(notas) /len(notas)
 acima_media = []
 for i in range(6):
     if notas[i] > media:
-        media.append(notas[i])
+            media.append(notas[i])
 
 # exibir resultado 
 print(f"\nmedia das notas:{media:.2f}")
