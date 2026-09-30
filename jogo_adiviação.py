@@ -4,7 +4,7 @@ potuacao_total = 0
 
 # Loop para 3 rodadas fixas
 for rodada in range(1,4):
-    print(f"\nrodada {rodada}")
+    print(f"\n===rodada {rodada}===")
     numero_secreto = random.randint(1,58)
     tentativas = 0
     pontos_rodadas = 0
@@ -35,8 +35,8 @@ for rodada in range(1,4):
             print("Seu palpite foi MENOR que o número secreto.")
 
 if "pontos_rodada_usuario" == 0 :
-    print("fim das tentativas! que burro dar zero para ele")
-"pontuacao_usuario" += "pontos_rodadas_usuario"
+    print("fim das tentativas! que burro dar zero para ele:")
+    pontos_rodadas += pontos_rodada_usuario
 
 # maquina joga 
 print("\nagora é a vez do computador")
@@ -67,8 +67,6 @@ while tentativas_computador < 5:
         print("palpite do computador foi menor que o numero secreto")
 if pontos_rodada_computador ==0:
     print("computador não acertou nessa rodada")
-
-    potuacao_total += pontos_rodadas
 
     # resultado final 
     print("\n=== resultado final===")
